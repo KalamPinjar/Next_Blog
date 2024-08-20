@@ -1,6 +1,6 @@
 "use client";
 
-import { Categories, PostCard, PostWidget } from "@/components";
+import { Categories, PostCard, PostWidget, Stars } from "@/components";
 import { useEffect, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
@@ -52,6 +52,7 @@ const CategoryPost = ({ params: { slug } }) => {
 
   return (
     <div className="container mx-auto px-10 mb-8">
+      <Stars />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
           {post.map((post, index) => (
